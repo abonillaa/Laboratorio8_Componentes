@@ -39,7 +39,7 @@ public class ContactController {
 	 return repository.save(contact);
 	}
 
-	@PutMapping(value="/{id}")
+	//@PutMapping(value="/{id}")
 	 public ResponseEntity<Contact> update(@PathVariable("id") long id, @RequestBody Contact contact){
 	 return repository.findById(id)
 		 .map(record -> {
